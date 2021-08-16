@@ -11,17 +11,18 @@ namespace Primo
 
             n = Convert.ToInt32(Console.ReadLine());
 
-            for (int a = 1; a < n; a++ )
+            for (int a = 1; a <= n; a++ )
             {
                 if (n % a == 0)
                     divisor++;
                 
             }
             if (divisor == 2)
-                Console.WriteLine("O número " + n + " não é primo. Número de iterações necessárias: " + divisor);
+                Console.WriteLine("O número " + n + " é primo. Número de iterações necessárias: 2 - ele mesmo e 1.");
+            
 
             else
-                Console.WriteLine("O número " + n + " é primo. Número de iterações necessárias: 2 - ele mesmo e 1.");
+                Console.WriteLine("O número " + n + " não é primo. Número de iterações necessárias: " + divisor);
         }
     }
 }
